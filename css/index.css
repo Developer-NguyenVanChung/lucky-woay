@@ -1,0 +1,99 @@
+.circle {
+  width: 240px;
+  height: 240px;
+  background-color: yellow;
+  border-radius: 100rem;
+  position: relative;
+  margin: 24px auto 12px;
+}
+.inside {
+  position: absolute;
+  background-color: green;
+  width: 215px;
+  height: 215px;
+  border-radius: 100rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 215px;
+}
+.run {
+  width: 60px;
+  height: 60px;
+  border-radius: 100rem;
+  border: none;
+  font-weight: 600;
+  font-size: 17px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.run:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+.status-run {
+  text-align: center;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333;
+  z-index: 1;
+  display: none;
+}
+.content {
+  padding: 24px;
+  position: absolute;
+  min-width: 280px;
+  min-height: 100px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 1;
+  border-radius: 4px;
+}
+.content .close {
+  float: right;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.content h3 {
+  text-align: center;
+}
+.closeTop {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  font-weight: 600;
+  font-size: 17;
+  padding: 6px 8px;
+}
+.closeTop:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.disible {
+  background-color: #ccc;
+  opacity: 0.5;
+  color: white;
+}
+.disible:hover {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
